@@ -1,0 +1,371 @@
+/*Monteserrat Font!!*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*Resets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GENERAL STUFF*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ /*Remove the underline in a*/
+a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+/*Remove the bullet points*/
+li{
+    list-style: none;
+}
+
+
+
+/*Navbar*/
+#navbar{
+    background:#3E2723;
+    color: #fff;
+    display: flex;
+
+    /*The logo and the home about etc is spaced horizontally apart*/
+    justify-content:space-between;
+    
+    /*For navbar to always remain on the top*/
+    position: sticky;
+    top: 0;
+
+    /*For minor 3d view of the navbar for it to always display on top*/
+    z-index: 1;
+
+    /*The contents of the navbar have 1rem padding*/
+    padding: 1rem;
+ 
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar li{
+
+}
+
+#navbar a{
+    padding: 1rem;
+    color: tan;
+}
+
+#navbar li a:hover{
+    color: white;
+}
+
+
+#navbar .logo .text-primary{
+    color: tan;
+}
+
+#showcase{
+    background: url('../images/table.jpg') center center/cover;
+    color:tan     ;
+    height: 100vh;
+    display: flex;
+}
+
+#showcase .showcase-text{
+    display: flex;
+    flex-direction: column;
+    /*y axis center all the content*/
+    justify-content:center;
+    /*x axis center*/
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+#showcase .showcase-text .showcase-h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#showcase .showcase-text .showcase-p{
+    font-size: 1.5rem;
+    padding: 0 5rem;
+    line-height: 1.4em;
+    margin-bottom: 2rem;
+}
+
+#showcase .showcase-text .showcase-a{
+    padding: 0.5rem 2rem;
+    background: tan;
+    font-size: 1.2rem;
+    color: black;
+    border: none;
+}
+
+#showcase .showcase-text .showcase-a:hover{
+    color: white;
+}
+
+/*Burgers Pizza and much more*/
+#imgs-data-burger{
+    display: flex;
+    height: 50vh;
+    
+    
+}
+
+#imgs-data-burger div{
+    flex: 1;
+}
+
+.imgs-container-burger{
+    background: url('../images/burger.jpg') no-repeat center center/cover;
+    
+}
+
+.text-container-burger{
+    text-align: center;
+}
+
+.imgs-text-burger{
+    
+    background: url('../images/pizzatext1.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100%;
+    padding: 3rem 2rem;   
+    align-self: center;
+    line-height: 1.4rem;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.imgs-text-burger h3{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    
+}
+
+.imgs-text-burger p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+}
+
+#pizza{
+    background: url('../images/pizza1.jpg') no-repeat center center/cover;
+}
+
+#burger{
+    background: url('../images/burger.jpg') no-repeat center center/cover;
+}
+
+#coffee{
+    background: url('../images/coffee2.jpg') no-repeat center center/cover;
+}
+
+/*Footer*/
+.footer-container{
+    background-color: #3E2723;
+    color: tan;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/*About!!*/
+
+#about-info{
+    display: flex;
+    height: 100vh;
+    background: url(../images/main1.jpg) no-repeat
+     center center/cover;
+     justify-content: center;
+     
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    /*y axis center all the content*/
+    justify-content:center;
+    /*x axis center*/
+    align-items: center;
+    text-align: center;
+    background-color: tan;
+    width: 100%;
+    color: black;
+    border: white 0.5 solid;
+    opacity: 0.9;
+    max-width: 1100px;
+    
+}
+
+.about-text .showcase-h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.about-text .showcase-p{
+    font-size: 1.5rem;
+    padding: 0 5rem;
+    line-height: 2.5rem;
+}
+
+
+
+/*Contact*/
+#contact{
+    display: flex;
+    justify-content: center;
+    background:url('../images/main2.jpg')
+    center center/cover no-repeat;
+}
+.contact-form{
+    height: 100vh;
+    border: black 1px solid;
+    max-width: 1100px;
+    margin:1rem;
+    background-color: blanchedalmond;
+    opacity: 0.9;
+    
+}
+.contact-form label{
+    display: block;
+}
+
+.contact-form h1{
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.contact-form p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.contact-form .form-group{
+    padding: 0 2rem;
+    
+}
+.contact-form .form-group label,input{
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-group label
+{
+    font-size: 1.5rem;
+}
+.contact-form .form-group input,textarea
+{
+    width: 100%;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 100%; /*For the text area only
+    as its width was not increasing so needed to
+    add this!!*/
+}
+
+
+
+.contact-form .submit{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    font-family: 'Montserrat', sans-serif; 
+    background-color: tan;
+    color: black;
+    font-size: 1.5rem;   
+}
+
+/*Gallery*/
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10rem;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-container1,.gallery-container2, .gallery-container3{
+    flex: 1;
+    display: flex;
+}
+.gallery-img{
+    border: 1px solid black;
+    padding: 1rem;
+    flex: 1;
+    
+    margin: 0.05rem;
+}
+
+#g1i1{
+    background: url('../images/coffee1.jpg') no-repeat center center/cover;
+}
+
+#g1i2{
+    background: url('../images/pasta.jpg') no-repeat center center/cover;
+}
+
+#g1i3{
+    background: url('../images/chinese.jpg') no-repeat center center/cover;
+}
+
+#g1i4{
+    background: url('../images/indian.jpg') no-repeat center center/cover;
+}
+
+
+#g2i1{
+    background: url('../images/salad.jpg') no-repeat center center/cover;
+}
+
+#g2i2{
+    background: url('../images/burger2.jpg') no-repeat center center/cover;
+}
+
+#g2i3{
+    background: url('../images/pancake1.jpg') no-repeat center center/cover;
+}
+
+#g2i4{
+    background: url('../images/fries1.jpg') no-repeat center center/cover;
+}
+
+
+#g3i1{
+    background: url('../images/salad2.jpg') no-repeat center center/cover;
+}
+
+#g3i2{
+    background: url('../images/omlette.jpg') no-repeat center center/cover;
+}
+
+#g3i3{
+    background: url('../images/burger3.jpg') no-repeat center center/cover;
+}
+
+#g3i4{
+    background: url('../images/pasta1.jpg') no-repeat center center/cover;
+}
+
+
+
+
+
+
+

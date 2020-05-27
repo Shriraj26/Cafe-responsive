@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    
+    display: flex;
+    flex-direction: column;
+    /*The logo and the home about etc is spaced horizontally apart*/
+    
+    
+    /*For navbar to always remain on the top*/
+    position: sticky;
+    top: 0;
+
+    /*For minor 3d view of the navbar for it to always display on top*/
+    z-index: 1;
+    
+    /*The contents of the navbar have 1rem padding*/
+    
+ 
+}
+
+#navbar ul{
+    flex: 1;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+
+#navbar .logo{
+    flex: 1;
+    text-align: center;
+}
+
+#imgs-data-burger{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs-container-burger{
+    flex: 1;
+    
+}
+
+.text-container-burger
+{
+    display: none;
+}
+
+.about-text{
+    
+    max-width: 100%;
+    
+    
+}
+
+.about-text .showcase-h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.about-text .showcase-p{
+    font-size: 1rem;
+    padding: 0 1rem;
+    line-height: 1rem;
+}
+
+
+.contact-form{
+    height: 75vh;
+    border: black 1px solid;
+    max-width: 1100px;
+    margin:1rem;
+    background-color: blanchedalmond;
+    opacity: 0.9;
+    width: 80vw;
+    
+}
+
+.contact-form h1{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.contact-form p{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.contact-form .form-group{
+    padding: 0 1rem;
+    
+}
+.contact-form .form-group label,input{
+    margin-bottom: 0.5rem;
+}
+
+.contact-form .form-group label
+{
+    font-size: 1rem;
+}
+.contact-form .form-group input,textarea
+{
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 100%; /*For the text area only
+    as its width was not increasing so needed to
+    add this!!*/    
+}
+
+
+
+.contact-form .submit{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-family: 'Montserrat', sans-serif; 
+    background-color: tan;
+    color: black;
+    font-size: 1rem;   
+}
+
+
+
+.gallery-container{
+    
+    margin: 0 0rem;
+    
+}
+
+
+
